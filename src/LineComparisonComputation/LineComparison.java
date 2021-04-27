@@ -35,7 +35,13 @@ public class LineComparison {
 		String line2Length=String.valueOf(lengthOfLine2);
 		System.out.println("Length Of the Line1 = " + line1Length);
 		System.out.println("Length Of the Line2 = " + line2Length);
-		System.out.println("Equality of 2 lines is " + line1Length.equals(line2Length));		
+		if (line1Length.compareTo(line2Length) == 0) {
+			System.out.println("Line1 length  is equal to Line2 ");
+		}else if(line1Length.compareTo(line2Length) == -1) {
+			System.out.println("Line1 length is less than line2 ");
+		}else {
+			System.out.println("Line1 length is greater than Line2");
+		}
 	}
 
 }
